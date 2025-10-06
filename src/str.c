@@ -1,4 +1,8 @@
-#include "strings.h"
+#include <string.h>
+#include "str.h"
+#include "tgc.h"
+
+void *mempcpy(void *dest, const void *src,size_t n);
 
 string_t string_concat(tgc_t *gc, string_t *s1, string_t *s2)
 {

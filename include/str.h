@@ -1,6 +1,5 @@
 #ifndef STRINGS_H
 #define STRINGS_H
-#include <string.h>
 #include "tgc.h"
 
 typedef struct {
