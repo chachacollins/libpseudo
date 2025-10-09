@@ -10,7 +10,7 @@ extern inline int print_uint(unsigned int x)
     return printf("%u", x);
 }
 
-extern inline int print_str(const string_t *const str)
+extern inline int print_str(const string_t str)
 {
-    return printf("%s", str->str);
+    return printf("%s", str.str);
 }
