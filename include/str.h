@@ -9,6 +9,6 @@ typedef struct {
 
 #define StrLit(s) (string_t) {s, sizeof(s)-1}
 
-string_t string_concat(tgc_t *gc, string_t *s1, string_t *s2);
+string_t string_concat(tgc_t *gc, const string_t *const s1, const string_t *const s2);
 
 #endif

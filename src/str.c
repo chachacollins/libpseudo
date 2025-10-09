@@ -4,7 +4,7 @@
 
 void *mempcpy(void *dest, const void *src,size_t n);
 
-string_t string_concat(tgc_t *gc, string_t *s1, string_t *s2)
+string_t string_concat(tgc_t *gc, const string_t *const s1, const string_t *const s2)
 {
     char* new_str = (char*)tgc_alloc(gc, sizeof(char) * (s1->len + s2->len + 1)); 
     *(char*)mempcpy(mempcpy(new_str, s1->str, s1->len), s2->str, s2->len) = '\0';
