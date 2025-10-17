@@ -7,6 +7,6 @@ int main(void)
     assert(pr1 == 2);
     int pr2 = print_int(10);
     assert(pr2 == 2);
-    int pr3 = print_str(&StrLit("Hello"));
+    int pr3 = print_str(StrLit("Hello"));
     assert(pr3 == 5);
 }
